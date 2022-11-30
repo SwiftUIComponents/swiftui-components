@@ -5,11 +5,17 @@ import PackageDescription
 
 let package = Package(
     name: "SwiftUIComponents",
+    platforms: [
+      .iOS(.v16),
+      .macOS(.v12),
+      .tvOS(.v13),
+      .watchOS(.v6)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SwiftUIComponents",
-            targets: ["SwiftUIComponents"]),
+            targets: ["SwiftUIComponents"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,6 +29,6 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "SwiftUIComponentsTests",
-            dependencies: ["SwiftUIComponents"]),
+            dependencies: ["SwiftUIComponents"])
     ]
 )
