@@ -36,7 +36,7 @@ public struct ContentView: View {
             Text("Quantity")
           }
           .stepperStyle(.capsule)
-            .controlSize(.small)
+          .controlSize(.small)
         }
       }
     }

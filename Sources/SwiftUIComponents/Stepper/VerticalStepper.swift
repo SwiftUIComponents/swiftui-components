@@ -1,5 +1,5 @@
 //
-//  CapsuleStepper.swift
+//  File.swift
 //  
 //
 //  Created by taha on 12/1/22.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CapsuleStepper: View {
+struct VerticalStepper: View {
   var configuration: StepperStyleConfiguration
 
   @Environment(\.controlSize) var controlSize
@@ -26,35 +26,38 @@ struct CapsuleStepper: View {
   var body: some View {
     LabeledContent {
       HStack {
-        Text("-")
-          .onHold {
-            configuration.value.wrappedValue -= 1
-          }
         ZStack {
           Text("99")
             .hidden()
           Text(configuration.value.wrappedValue.formatted())
             .monospacedDigit()
         }
-        Text("+")
-          .onHold {
-            configuration.value.wrappedValue += 1
-          }
-      }
-      .transformEnvironment(\.font, transform: { font in
-        if font != nil { return }
-        switch controlSize {
-        case .mini: font = .footnote
-        case .small: font = .callout
-        default: font = .body
+        VStack(spacing: 4) {
+          Image(systemName: "chevron.up")
+          Image(systemName: "chevron.down")
         }
-      })
+      }
       .padding(.vertical, padding)
       .padding(.horizontal, padding * 2)
-      .foregroundColor(.white)
       .background {
-        Capsule()
-          .fill(.tint)
+        RoundedRectangle(cornerRadius: 8, style: .continuous)
+          .fill(.regularMaterial)
+      }
+      .overlay {
+        VStack(spacing: 0) {
+          Rectangle()
+            .fill(.clear)
+            .contentShape(Rectangle())
+            .onHold {
+              configuration.value.wrappedValue += 1
+            }
+          Rectangle()
+            .fill(.clear)
+            .contentShape(Rectangle())
+            .onHold {
+              configuration.value.wrappedValue -= 1
+            }
+        }
       }
     } label: {
       configuration.label
@@ -63,9 +66,9 @@ struct CapsuleStepper: View {
   }
 }
 
-struct CapsuleStepper_Previews: PreviewProvider {
+struct VerticalStepper_Previews: PreviewProvider {
   static var previews: some View {
-    VStack {
+    VStack(spacing: 16) {
       Stepper(value: .constant(5), range: 0...100) {
         Text("Mini")
       }
@@ -96,7 +99,7 @@ struct CapsuleStepper_Previews: PreviewProvider {
       .controlSize(.large)
       .font(.largeTitle)
     }
-    .stepperStyle(.capsule)
+    .stepperStyle(.vertical)
     .padding()
   }
 }

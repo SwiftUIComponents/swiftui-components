@@ -32,40 +32,16 @@ struct Stepper_Previews: PreviewProvider {
         Text("Default style")
       }
       .stepperStyle(.default)
-      .controlSize(.mini)
 
-      VStack {
-        Stepper(value: .constant(5), range: 0...100) {
-          Text("Mini")
-        }
-        .controlSize(.mini)
-
-        Stepper(value: .constant(5), range: 0...100) {
-          Text("Small")
-        }
-        .controlSize(.small)
-
-        Stepper(value: .constant(5), range: 0...100) {
-          Text("Regular")
-        }
-        .controlSize(.regular)
-
-        Stepper(value: .constant(5), range: 0...100) {
-          Text("Large")
-        }
-        .controlSize(.large)
-
-        Stepper(value: .constant(5), range: 0...100) {
-          Text("Default")
-        }
-
-        Stepper(value: .constant(5), range: 0...100) {
-          Text("Large")
-        }
-        .controlSize(.large)
-        .font(.largeTitle)
+      Stepper(value: .constant(5), range: 0...100) {
+        Text("Mini")
       }
       .stepperStyle(.capsule)
+
+      Stepper(value: .constant(5), range: 0...100) {
+        Text("Mini")
+      }
+      .stepperStyle(.vertical)
     }
     .padding()
   }
