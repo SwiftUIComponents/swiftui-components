@@ -58,6 +58,7 @@ struct Stepper_Previews: PreviewProvider {
       }
       .stepperStyle(.vertical)
     }
+    .controlSize(.mini)
     .padding()
   }
 }
