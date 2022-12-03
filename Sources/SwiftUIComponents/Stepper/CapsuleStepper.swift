@@ -27,6 +27,7 @@ struct CapsuleStepper: View {
     LabeledContent {
       HStack {
         Text("-")
+          .accessibilityLabel("Decrement")
           .onHold {
             configuration.value.wrappedValue -= 1
           }
@@ -37,6 +38,7 @@ struct CapsuleStepper: View {
             .monospacedDigit()
         }
         Text("+")
+          .accessibilityLabel("Increment")
           .onHold {
             configuration.value.wrappedValue += 1
           }

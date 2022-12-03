@@ -39,6 +39,7 @@ public struct ContentView: View {
           .controlSize(.small)
         }
       }
+      .accessibilityElement(children: .combine)
     }
     .safeAreaInset(edge: .bottom, spacing: 0, content: {
       VStack {

@@ -22,6 +22,21 @@ public struct Stepper<Label: View>: View {
 
   public var body: some View {
     AnyView(style.makeBody(.init(value: $value, label: .init(underlyingLabel: AnyView(label)), range: range)))
+      .accessibilityElement(children: .ignore)
+      .accessibilityRepresentation {
+        label
+      }
+      .accessibilityValue(value.formatted())
+      .accessibilityAdjustableAction { direction in
+        switch direction {
+        case .increment:
+          value += 1
+        case .decrement:
+          value -= 1
+        @unknown default:
+          break
+        }
+      }
   }
 }
 
