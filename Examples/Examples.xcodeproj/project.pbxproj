@@ -7,27 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D0EFA7C2937187F0048C220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0EFA7B2937187F0048C220 /* ContentView.swift */; };
+		0F66813A293B050A00504B9D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F668139293B050A00504B9D /* CartViewModel.swift */; };
+		0F66813C293B0F9C00504B9D /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F66813B293B0F9C00504B9D /* CartItem.swift */; };
+		7D0EFA7C2937187F0048C220 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0EFA7B2937187F0048C220 /* CartView.swift */; };
 		7D0EFA7E293719CB0048C220 /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 7D0EFA7D293719CB0048C220 /* SwiftUIComponents */; };
-		7D0EFAB929372DC50048C220 /* SwiftUIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = 7D0EFAB829372DC50048C220 /* SwiftUIComponents */; };
-		7D0EFABB29372E540048C220 /* CaseStudiesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0EFABA29372E540048C220 /* CaseStudiesApp.swift */; };
-		7D0EFABD29372E7B0048C220 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0EFABC29372E7B0048C220 /* ContentView.swift */; };
 		CA4737CF272F09600012CAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4737CE272F09600012CAC3 /* Assets.xcassets */; };
 		CA4737FB272F09D00012CAC3 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4737F7272F09D00012CAC3 /* App.swift */; };
-		CA47380B272F0D340012CAC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA47380A272F0D340012CAC3 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F668139293B050A00504B9D /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		0F66813B293B0F9C00504B9D /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		7D0EFA7A293717D70048C220 /* SwiftUIComponents */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = SwiftUIComponents; path = ..; sourceTree = "<group>"; };
-		7D0EFA7B2937187F0048C220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7D0EFABA29372E540048C220 /* CaseStudiesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseStudiesApp.swift; sourceTree = "<group>"; };
-		7D0EFABC29372E7B0048C220 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D0EFA7B2937187F0048C220 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		CA4737C8272F095F0012CAC3 /* Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4737CE272F09600012CAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4737F7272F09D00012CAC3 /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		CA473804272F0D330012CAC3 /* CaseStudies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaseStudies.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA47380A272F0D340012CAC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CA47383C272F0F0D0012CAC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,14 +31,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D0EFA7E293719CB0048C220 /* SwiftUIComponents in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA473801272F0D330012CAC3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D0EFAB929372DC50048C220 /* SwiftUIComponents in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +50,6 @@
 			children = (
 				7D0EFA79293717D70048C220 /* Packages */,
 				CA4737C9272F095F0012CAC3 /* Inventory */,
-				CA473805272F0D330012CAC3 /* CaseStudies */,
 				CA473795272F08EF0012CAC3 /* Products */,
 				CA4737F2272F09780012CAC3 /* Frameworks */,
 			);
@@ -73,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				CA4737C8272F095F0012CAC3 /* Inventory.app */,
-				CA473804272F0D330012CAC3 /* CaseStudies.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,7 +67,9 @@
 			isa = PBXGroup;
 			children = (
 				CA4737F7272F09D00012CAC3 /* App.swift */,
-				7D0EFA7B2937187F0048C220 /* ContentView.swift */,
+				0F668139293B050A00504B9D /* CartViewModel.swift */,
+				7D0EFA7B2937187F0048C220 /* CartView.swift */,
+				0F66813B293B0F9C00504B9D /* CartItem.swift */,
 				CA4737CE272F09600012CAC3 /* Assets.xcassets */,
 			);
 			path = Inventory;
@@ -93,17 +80,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CA473805272F0D330012CAC3 /* CaseStudies */ = {
-			isa = PBXGroup;
-			children = (
-				CA47383C272F0F0D0012CAC3 /* Info.plist */,
-				7D0EFABA29372E540048C220 /* CaseStudiesApp.swift */,
-				7D0EFABC29372E7B0048C220 /* ContentView.swift */,
-				CA47380A272F0D340012CAC3 /* Assets.xcassets */,
-			);
-			path = CaseStudies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,26 +105,6 @@
 			productReference = CA4737C8272F095F0012CAC3 /* Inventory.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CA473803272F0D330012CAC3 /* CaseStudies */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CA473825272F0D350012CAC3 /* Build configuration list for PBXNativeTarget "CaseStudies" */;
-			buildPhases = (
-				CA473800272F0D330012CAC3 /* Sources */,
-				CA473801272F0D330012CAC3 /* Frameworks */,
-				CA473802272F0D330012CAC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CaseStudies;
-			packageProductDependencies = (
-				7D0EFAB829372DC50048C220 /* SwiftUIComponents */,
-			);
-			productName = CaseStudies;
-			productReference = CA473804272F0D330012CAC3 /* CaseStudies.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -162,10 +118,6 @@
 					CA4737C7272F095F0012CAC3 = {
 						CreatedOnToolsVersion = 13.1;
 						LastSwiftMigration = 1310;
-					};
-					CA473803272F0D330012CAC3 = {
-						CreatedOnToolsVersion = 13.1;
-						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -184,7 +136,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CA473803272F0D330012CAC3 /* CaseStudies */,
 				CA4737C7272F095F0012CAC3 /* Inventory */,
 			);
 		};
@@ -199,14 +150,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA473802272F0D330012CAC3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CA47380B272F0D340012CAC3 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,17 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D0EFA7C2937187F0048C220 /* ContentView.swift in Sources */,
+				0F66813A293B050A00504B9D /* CartViewModel.swift in Sources */,
+				7D0EFA7C2937187F0048C220 /* CartView.swift in Sources */,
+				0F66813C293B0F9C00504B9D /* CartItem.swift in Sources */,
 				CA4737FB272F09D00012CAC3 /* App.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CA473800272F0D330012CAC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D0EFABD29372E7B0048C220 /* ContentView.swift in Sources */,
-				7D0EFABB29372E540048C220 /* CaseStudiesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,73 +344,6 @@
 			};
 			name = Release;
 		};
-		CA473826272F0D350012CAC3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CaseStudies/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIComponents.CaseStudies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CA473827272F0D350012CAC3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CaseStudies/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftUIComponents.CaseStudies;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,23 +365,10 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA473825272F0D350012CAC3 /* Build configuration list for PBXNativeTarget "CaseStudies" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CA473826272F0D350012CAC3 /* Debug */,
-				CA473827272F0D350012CAC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		7D0EFA7D293719CB0048C220 /* SwiftUIComponents */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SwiftUIComponents;
-		};
-		7D0EFAB829372DC50048C220 /* SwiftUIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = SwiftUIComponents;
 		};

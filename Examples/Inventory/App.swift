@@ -4,7 +4,7 @@ import SwiftUI
 struct InventoryApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
+      CartView(cartViewModel: CartViewModel())
     }
   }
 }

@@ -30,9 +30,9 @@ public struct Stepper<Label: View>: View {
       .accessibilityAdjustableAction { direction in
         switch direction {
         case .increment:
-          value += 1
+          increment(&value, range: range)
         case .decrement:
-          value -= 1
+          decrement(&value, range: range)
         @unknown default:
           break
         }

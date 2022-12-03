@@ -29,10 +29,10 @@ struct CapsuleStepper: View {
         Text("-")
           .accessibilityLabel("Decrement")
           .onHold {
-            configuration.value.wrappedValue -= 1
+            decrement(&configuration.value.wrappedValue, range: configuration.range)
           }
         ZStack {
-          Text("99")
+          Text(configuration.range.upperBound.formatted())
             .hidden()
           Text(configuration.value.wrappedValue.formatted())
             .monospacedDigit()
@@ -40,7 +40,7 @@ struct CapsuleStepper: View {
         Text("+")
           .accessibilityLabel("Increment")
           .onHold {
-            configuration.value.wrappedValue += 1
+            increment(&configuration.value.wrappedValue, range: configuration.range)
           }
       }
       .transformEnvironment(\.font, transform: { font in

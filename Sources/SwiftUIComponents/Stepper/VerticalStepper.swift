@@ -27,7 +27,7 @@ struct VerticalStepper: View {
     LabeledContent {
       HStack {
         ZStack {
-          Text("99")
+          Text(configuration.range.upperBound.formatted())
             .hidden()
           Text(configuration.value.wrappedValue.formatted())
             .monospacedDigit()
@@ -49,13 +49,13 @@ struct VerticalStepper: View {
             .fill(.clear)
             .contentShape(Rectangle())
             .onHold {
-              configuration.value.wrappedValue += 1
+              increment(&configuration.value.wrappedValue, range: configuration.range)
             }
           Rectangle()
             .fill(.clear)
             .contentShape(Rectangle())
             .onHold {
-              configuration.value.wrappedValue -= 1
+              decrement(&configuration.value.wrappedValue, range: configuration.range)
             }
         }
       }

@@ -13,12 +13,17 @@ struct OnHold: ViewModifier {
   @State private var isPressed = false
 
   func hold() async throws {
-    perform()
+    await callPerform()
     try await Task.sleep(for: .seconds(0.5))
     while true {
-      perform()
+      await callPerform()
       try await Task.sleep(for: .seconds(0.1))
     }
+  }
+  
+  @MainActor
+  func callPerform() {
+    perform()
   }
 
   func body(content: Content) -> some View {
