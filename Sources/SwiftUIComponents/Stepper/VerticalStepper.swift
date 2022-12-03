@@ -28,6 +28,7 @@ struct VerticalStepper: View {
       HStack {
         ZStack {
           Text(configuration.range.upperBound.formatted())
+            .monospacedDigit()
             .hidden()
           Text(configuration.value.wrappedValue.formatted())
             .monospacedDigit()

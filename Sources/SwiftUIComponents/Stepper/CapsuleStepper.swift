@@ -33,6 +33,7 @@ struct CapsuleStepper: View {
           }
         ZStack {
           Text(configuration.range.upperBound.formatted())
+            .monospacedDigit()
             .hidden()
           Text(configuration.value.wrappedValue.formatted())
             .monospacedDigit()
