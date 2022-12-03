@@ -4,7 +4,16 @@ import SwiftUI
 struct InventoryApp: App {
   var body: some Scene {
     WindowGroup {
-      CartView(cartViewModel: CartViewModel())
+      NavigationStack {
+        NavigationLink("Stepper") {
+          CartView(cartViewModel: CartViewModel())
+        }
+        .padding()
+        NavigationLink("AddressForm") {
+          AddressView()
+        }
+        .padding()
+      }
     }
   }
 }
