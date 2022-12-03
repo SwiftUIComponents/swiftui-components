@@ -49,16 +49,16 @@ struct Stepper_Previews: PreviewProvider {
       .stepperStyle(.default)
 
       Stepper(value: .constant(5), range: 0...100) {
-        Text("Mini")
+        Text("Capsule")
       }
       .stepperStyle(.capsule)
 
       Stepper(value: .constant(5), range: 0...100) {
-        Text("Mini")
+        Text("Vertical")
       }
       .stepperStyle(.vertical)
     }
-    .controlSize(.mini)
+    .controlSize(.regular)
     .padding()
   }
 }
